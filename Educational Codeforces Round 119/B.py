@@ -1,3 +1,5 @@
+# pass
+
 import sys
 from itertools import permutations
 
