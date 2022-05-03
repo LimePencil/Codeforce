@@ -11,9 +11,8 @@ l.sort()
 
 m=float('inf')
 if abs(l[0][1]-l[1][1])==2:
-    m=min(m,max(l[0][0],l[1][0]))
-if abs(l[0][1]-l[1][1])==1:
-    m=min(m,ceil((l[0][0]+l[1][0])/3))
+    m=min(m,l[0][0]+ceil((l[1][0]-l[0][0])/2))
+
 
 temp=walls[:]
 amount=0
